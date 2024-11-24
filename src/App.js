@@ -54,7 +54,7 @@ function App() {
                 fastest growing
               </p>
               <p style={{ color: "#FFFA5B" }} id="memtoken">
-                memtoken
+                memecoin
               </p>
             </div>
             <img src="./pigeon_1.gif" alt="" />
