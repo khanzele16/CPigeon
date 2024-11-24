@@ -1,38 +1,590 @@
+body {
+  overflow-x: hidden;
+}
 .App {
-  text-align: center;
+  width: 100vw;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  column-gap: 82px;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  background-color: #3179e3;
+  width: 100%;
+  z-index: 90;
+  box-shadow: 0 0 2px 2px #333;
 }
-
-.App-link {
-  color: #61dafb;
+header p {
+  font-size: 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+header p:hover {
+  color: #fffa5b;
+}
+.App-div {
+  position: relative;
+}
+.App-div-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: #3179e3;
+}
+.App-div-1-marque {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  column-gap: 25px;
+  padding: 12px 0;
+  background-color: #3b4e92;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  overflow: hidden;
+  width: 100%;
+}
+.App-div-1-marque-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  column-gap: 25px;
+  font-size: 22px;
+  flex-direction: row;
+  animation: marque-list 25s linear infinite;
+  transform: translate3d(-100%, 0px, 0px);
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+@keyframes marque-list {
+  100% {
+    transform: translate3d(100%, 0, 0);
   }
-  to {
-    transform: rotate(360deg);
+}
+.App-div-1-marque li {
+  font-family: "Changa One", sans-serif;
+}
+.App-div-1-main {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 72vh;
+}
+.App-div-1-main-text {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.App-div-1-main-text p {
+  text-transform: uppercase;
+}
+.App-div-1-main-text #hello-crusty {
+  font-size: 82px;
+}
+.App-div-1-main-text #one-of-the {
+  font-size: 75px;
+}
+.App-div-1-main-text #memtoken {
+  font-size: 82px;
+}
+.App-div-1-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  column-gap: 15px;
+  height: 157px;
+}
+.App-div-1-scroll p {
+  font-size: 45px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px black;
+}
+.App-div-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: #3b4e92;
+}
+.App-div-2-main {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 83vh;
+  row-gap: 35px;
+}
+.App-div-2-main-text-question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  column-gap: 50px;
+  position: relative;
+}
+.App-div-2-main-text-question p {
+  font-family: "Changa One";
+  font-size: 100px;
+  position: relative;
+  text-shadow: 3px 3px black;
+}
+.App-div-2-main-text-question #question-1 {
+  animation: question-1 ease 2s infinite;
+  transform: rotate(-25deg);
+}
+.App-div-2-main-text-question #question-2 {
+  animation: question-2 ease 2s 2s infinite;
+  transform: rotate(25deg);
+}
+.App-div-2-main-text-question #question-3 {
+  animation: question-3 ease 2s 4s infinite;
+  transform: rotate(-15deg);
+}
+.App-div-2-main-text-question #question-4 {
+  animation: question-4 ease 2s 6s infinite;
+  transform: rotate(15deg);
+}
+@keyframes question-1 {
+  50% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-25deg);
+  }
+}
+@keyframes question-2 {
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}
+@keyframes question-3 {
+  50% {
+    transform: rotate(25deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
+}
+@keyframes question-4 {
+  50% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+.App-div-2-main-text h3 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-family: "Changa One", sans-serif;
+  font-weight: 500;
+  text-shadow: 3px 3px black;
+  margin-bottom: 25px;
+}
+.App-div-2-main-texts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.App-div-2-main-text li {
+  font-size: 40px;
+  font-family: "Changa One", sans-serif;
+  font-weight: 500;
+  text-shadow: 3px 3px black;
+}
+.App-div-2-scroll {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  column-gap: 15px;
+  height: 162px;
+}
+.App-div-2-scroll p {
+  font-size: 45px;
+  text-transform: uppercase;
+  text-shadow: 3px 3px black;
+}
+.App-div-3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  background-color: #3179e3;
+  margin: 90px 0;
+}
+.App-div-3 h2 {
+  font-size: 60px;
+  font-weight: 500;
+  font-family: "Changa One";
+}
+.App-div-3-main {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: space-evenly;
+  margin: 100px 0;
+  column-gap: 20px;
+}
+.App-div-3-main-text {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: start;
+  row-gap: 20px;
+}
+.App-div-3-main-text h4 {
+  font-family: "Changa One";
+  font-size: 40px;
+  font-weight: 400;
+}
+.App-div-3-main-text-list-1 {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  margin-bottom: 20px;
+}
+.App-div-3-main-text-list-1 li img {
+  width: 90px;
+  border-radius: 50%;
+}
+.App-div-3-main-text-list-2 {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+.App-div-3-main-text-list-2 li img {
+  width: 90px;
+  border-radius: 50%;
+}
+@media (max-width: 1250px) {
+  .App-div-1 {
+    row-gap: 45px;
+  }
+  .App-div-1-main {
+    flex-direction: column;
+    height: 80vh;
+  }
+  .App-div-1-main img {
+    width: 480px;
+  }
+  .App-div-1-marque-list {
+    transform: translate3d(-85%, 0px, 0px);
+  }
+  @keyframes marque-list {
+    100% {
+      transform: translate3d(85%, 0, 0);
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .App-div-2-main {
+    flex-direction: column;
+    height: 100vh;
+    row-gap: 0;
+  }
+  .App-div-2-main img {
+    width: 480px;
+  }
+  .App-div-1-scroll {
+    height: 100px;
+  }
+  .App-div-1-scroll p {
+    font-size: 36px;
+  }
+  .App-div-2-scroll {
+    height: 100px;
+  }
+  .App-div-2-scroll p {
+    font-size: 36px;
+  }
+  .App-div-2-main-text-question p {
+    font-size: 70px;
+  }
+  .App-div-2-main-texts {
+    row-gap: 15px;
+  }
+  .App-div-2-main-texts h3 {
+    font-size: 36px;
+  }
+  .App-div-2-main-texts li {
+    font-size: 35px;
+  }
+  .App-div-3 h2 {
+    font-size: 40px;
+  }
+  .App-div-3-main img {
+    width: 480px;
+  }
+  .App-div-1-marque-list {
+    transform: translate3d(-75%, 0px, 0px);
+  }
+  @keyframes marque-list {
+    100% {
+      transform: translate3d(75%, 0, 0);
+    }
+  }
+}
+@media (max-width: 768px) {
+  .App-div-1-marque-list {
+    column-gap: 15px;
+    font-size: 18px;
+  }
+  .App-div-1-marque-list {
+    transform: translate3d(-50%, 0px, 0px);
+  }
+  @keyframes marque-list {
+    100% {
+      transform: translate3d(50%, 0, 0);
+    }
+  }
+  .App-div-1 {
+    row-gap: 10px;
+  }
+  .App-div-1-main-text #hello-crusty {
+    font-size: 58px;
+  }
+  .App-div-1-main-text #one-of-the {
+    font-size: 58px;
+  }
+  .App-div-1-main-text #memtoken {
+    font-size: 58px;
+  }
+  .App-div-1-main img {
+    width: 420px;
+  }
+  .App-div-1-scroll {
+    display: none;
+  }
+  .App-div-2-main {
+    justify-content: center;
+    height: 80vh;
+  }
+  .App-div-2-main img {
+    width: 350px;
+  }
+  .App-div-2-main-text-question p {
+    font-size: 40px;
+  }
+  .App-div-2-main-texts h3 {
+    font-size: 32px;
+    margin: 0;
+  }
+  .App-div-2-main-texts li {
+    font-size: 26px;
+  }
+  .App-div-2-scroll {
+    display: none;
+  }
+  .App-div-3-main img {
+    width: 350px;
+  }
+  .App-div-3-main-text h4 {
+    font-size: 25px;
+  }
+  .App-div-3-main-text-list-1 {
+    column-gap: 20px;
+  }
+  .App-div-3-main-text-list-1 li img {
+    width: 60px;
+  }
+  .App-div-3-main-text-list-2 {
+    column-gap: 20px;
+  }
+  .App-div-3-main-text-list-2 li img {
+    width: 60px;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    height: 50px;
+    column-gap: 54px;
+  }
+  header a p {
+    font-size: 18px;
+    font-family: "Changa One";
+  }
+  .App-div-1-main {
+    height: 60vh;
+    row-gap: 25px;
+  }
+  .App-div-1-main img {
+    width: 300px;
+  }
+  .App-div-2-main-text-question {
+    display: none;
+  }
+  .App-div-1-main-text #hello-crusty {
+    font-size: 42px;
+  }
+  .App-div-1-main-text #one-of-the {
+    font-size: 42px;
+  }
+  .App-div-1-main-text #memtoken {
+    font-size: 42px;
+  }
+  .App-div-2-main img {
+    width: 300px;
+  }
+  .App-div-2-main {
+    height: 50vh;
+    margin-bottom: 40px;
+  }
+  .App-div-2-main-text {
+    row-gap: 25px;
+  }
+  .App-div-2-main-texts {
+    row-gap: 10px;
+  }
+  .App-div-2-main-texts h3 {
+    font-size: 26px;
+  }
+  .App-div-2-main-texts li {
+    font-size: 20px;
+  }
+  .App-div-3-main {
+    margin: 15px 0;
+    flex-direction: column;
+  }
+  .App-div-3 {
+    margin: 30px 0;
+  }
+  .App-div-3 h2 {
+    font-size: 25px;
+  }
+  .App-div-3-main-text h4 {
+    font-size: 20px;
+  }
+  .App-div-3-main-text {
+    row-gap: 15px;
+    width: 250px;
+  }
+  .App-div-3-main-text-list-1 {
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+  }
+  .App-div-3-main-text-list-2 {
+    justify-content: space-evenly;
+  }
+  .App-div-3-main img {
+    width: 280px;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    column-gap: 30px;
+  }
+  header a p {
+    font-size: 15px;
+    font-family: "Changa One";
+  }
+  .App-div-1-main {
+    height: 60vh;
+    row-gap: 10px;
+  }
+  .App-div-1-main img {
+    width: 250px;
+  }
+  .App-div-2-main-text-question {
+    display: none;
+  }
+  .App-div-1-main-text #hello-crusty {
+    font-size: 28px;
+  }
+  .App-div-1-main-text #one-of-the {
+    font-size: 28px;
+  }
+  .App-div-1-main-text #memtoken {
+    font-size: 28px;
+  }
+  .App-div-2-main img {
+    width: 220px;
+  }
+  .App-div-2-main {
+    height: 50vh;
+    margin-bottom: 40px;
+  }
+  .App-div-2-main-text {
+    row-gap: 25px;
+  }
+  .App-div-2-main-texts {
+    row-gap: 10px;
+  }
+  .App-div-2-main-texts h3 {
+    font-size: 20px;
+  }
+  .App-div-2-main-texts li {
+    font-size: 16px;
+  }
+  .App-div-3-main {
+    margin: 15px 0;
+    flex-direction: column;
+  }
+  .App-div-3 {
+    margin: 30px 0;
+  }
+  .App-div-3 h2 {
+    font-size: 20px;
+  }
+  .App-div-3-main-text h4 {
+    text-align: center;
+    font-size: 16px;
+  }
+  .App-div-3-main-text {
+    row-gap: 15px;
+    width: 250px;
+  }
+  .App-div-3-main-text-list-1 {
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+  }
+  .App-div-3-main-text-list-2 {
+    justify-content: space-evenly;
+  }
+  .App-div-3-main img {
+    width: 150px;
+  }
+  .App-div-3-main-text-list-1 li img {
+    width: 45px;
+  }
+  .App-div-3-main-text-list-2 li img {
+    width: 45px;
+  }
+  .App-div-1-marque-list {
+    animation-duration: 10s;
+    transform: translate3d(-20%, 0px, 0px);
+  }
+  @keyframes marque-list {
+    100% {
+      transform: translate3d(20%, 0, 0);
+    }
   }
 }
