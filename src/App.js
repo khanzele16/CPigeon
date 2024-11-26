@@ -80,7 +80,7 @@ function App() {
                 <li>His real name is Crusty.</li>
                 <li>Token was created recently,</li>
                 <li>But we already did many things</li>
-                <li>And it’s just memtoken :-))</li>
+                <li>And it’s just memecoin :-))</li>
               </ul>
             </div>
           </div>
@@ -113,7 +113,7 @@ function App() {
                   </li>
                 </a>
               </ul>
-              <h4>$CPEGION’s creators:</h4>
+              <h4>$CPIGEON’s creators:</h4>
               <ul className="App-div-3-main-text-list-2">
                 <a href="https://t.me/khanzele">
                   <li>
