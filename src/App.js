@@ -123,10 +123,10 @@ function App() {
                     />
                   </li>
                 </a>
-                <a href="https://t.me/magyla">
+                <a href="https://t.me/aa_usdt">
                   <li>
                     <img
-                      src="./magyla.jpg"
+                      src="./aa_usdt.png"
                       alt=""
                     />
                   </li>
